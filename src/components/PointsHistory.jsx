@@ -3,6 +3,7 @@ export default function PointsHistory({ data, isLoading }) {
   const formatDate = (timestamp) => {
     return new Date(timestamp).toLocaleString();
   };
+// UI updated
 
   return (
     <div className="bg-white p-6 rounded-2xl shadow-xl border border-gray-100">

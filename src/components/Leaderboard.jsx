@@ -2,7 +2,7 @@
 import { Crown } from 'lucide-react';
 
 const crownColors = ['text-yellow-500', 'text-gray-400', 'text-yellow-700'];
-
+//leaderboards
 export default function Leaderboard({ data, isLoading }) {
   return (
     <div className="bg-white p-6 rounded-2xl shadow-xl border border-yellow-100">
