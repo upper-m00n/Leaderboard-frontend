@@ -12,7 +12,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [notification, setNotification] = useState(null);
 
-  const API_URL = 'http://localhost:5000/api';
+  const API_URL = 'https://leaderboard-backend-fjld.onrender.com/api';
   // fetches users
   const fetchUsers = async () => {
     const response = await axios.get(`${API_URL}/users`);

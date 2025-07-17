@@ -15,7 +15,7 @@ export default function UserActions({
   const [selectedUserId, setSelectedUserId] = useState('');
   const [newUserName, setNewUserName] = useState('');
 
-  const API_URL = 'http://localhost:5000';
+  const API_URL = 'https://leaderboard-backend-fjld.onrender.com';
 
   // handles point and calls api
   const handleClaimPoints = async () => {
