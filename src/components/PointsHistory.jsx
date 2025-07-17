@@ -1,4 +1,4 @@
-// src/components/PointsHistory.jsx
+
 export default function PointsHistory({ data, isLoading }) {
   const formatDate = (timestamp) => {
     return new Date(timestamp).toLocaleString();
@@ -7,7 +7,7 @@ export default function PointsHistory({ data, isLoading }) {
   return (
     <div className="bg-white p-6 rounded-2xl shadow-xl border border-gray-100">
   <h2 className="text-xl font-semibold text-gray-800 mb-4 text-center">📜 Claim History</h2>
-
+  
   {isLoading ? (
     <div className="text-center py-6 text-gray-400">Loading...</div>
   ) : (

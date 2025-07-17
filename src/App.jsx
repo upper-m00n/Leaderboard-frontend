@@ -13,14 +13,15 @@ function App() {
   const [notification, setNotification] = useState(null);
 
   const API_URL = 'http://localhost:5000/api';
-
+  // fetches users
   const fetchUsers = async () => {
     const response = await axios.get(`${API_URL}/users`);
     setUsers(response.data);
   };
-
+// fetches leaderboard
   const fetchLeaderboard = async () => {
     const response = await axios.get(`${API_URL}/leaderboard`);
+    //console.log()
     setLeaderboard(response.data);
   };
 
@@ -49,6 +50,7 @@ function App() {
     setTimeout(() => setNotification(null), 3000);
   };
 
+// handling point system
   const handleClaimSuccess = (response) => {
     setLeaderboard(prev => {
       const updated = prev.map(user => 

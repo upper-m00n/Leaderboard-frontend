@@ -1,4 +1,4 @@
-// src/components/Leaderboard.jsx
+
 import { Crown } from 'lucide-react';
 
 const crownColors = ['text-yellow-500', 'text-gray-400', 'text-yellow-700'];
@@ -20,7 +20,7 @@ export default function Leaderboard({ data, isLoading }) {
               }`}
             >
               <div className="flex items-center gap-3">
-                {/* Avatar */}
+                
                 <div className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-lg font-bold text-gray-500 uppercase">
                   {user.name.charAt(0)}
                 </div>

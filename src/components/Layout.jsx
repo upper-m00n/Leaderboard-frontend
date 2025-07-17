@@ -1,4 +1,4 @@
-// src/components/Layout.jsx
+
 export default function Layout({ children, notification }) {
   return (
     <div className="min-h-screen bg-gray-100 p-6">

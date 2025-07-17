@@ -1,12 +1,44 @@
-# React + Vite
+#  Points Leaderboard App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive **Points Reward System** built with the MERN stack. Users can claim daily points, view their leaderboard rank, and track their claim history.
 
-Currently, two official plugins are available:
+##  Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-  User Selection Dropdown
+-  Daily Point Claim Button
+-  Live Leaderboard with Ranks
+-  Claim History for Selected User
+-  Real-time UI updates after claim
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+**Frontend:**
+- React.js
+- Tailwind CSS
+- Axios
+
+**Backend:**
+- Node.js
+- Express.js
+- MongoDB (with Mongoose)
+
+---
+
+## Folder Structure
+
+```bash
+.
+├── backend/
+│   ├── models/
+│   ├── routes/
+│   ├── controllers/
+│   ├── .env
+│   └── server.js
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── App.jsx
+│   │   └── index.js
+│   └── public/

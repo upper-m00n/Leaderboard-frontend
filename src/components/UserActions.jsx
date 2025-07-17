@@ -17,6 +17,7 @@ export default function UserActions({
 
   const API_URL = 'http://localhost:5000';
 
+  // handles point and calls api
   const handleClaimPoints = async () => {
     if (!selectedUserId) {
       showNotification('Please select a user first', 'error');
@@ -61,10 +62,10 @@ export default function UserActions({
       setNewUserName('');
       showNotification('User added successfully');
       
-      // Update users list immediately
+      // for real time update
       setUsers(prevUsers => [...prevUsers, response.data]);
       
-      // Refresh all data to ensure consistency
+      // Refresh all data 
       await fetchData();
     } catch (error) {
       console.error('Add user error:', error);
