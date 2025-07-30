@@ -30,6 +30,8 @@ function App() {
     setHistory(response.data);
   };
 
+
+  // fetch all data
   const fetchData = async () => {
     try {
       setIsLoading(true);
