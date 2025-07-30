@@ -15,7 +15,7 @@ export default function UserActions({
   const [selectedUserId, setSelectedUserId] = useState('');
   const [newUserName, setNewUserName] = useState('');
 
-  const API_URL = 'https://leaderboard-backend-production-e458.up.railway.app';
+  const API_URL = 'https://leaderboard-backend-2stb.onrender.com';
 
   // handles point and calls api
   const handleClaimPoints = async () => {

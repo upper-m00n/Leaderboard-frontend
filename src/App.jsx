@@ -12,7 +12,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [notification, setNotification] = useState(null);
 
-  const API_URL = 'https://leaderboard-backend-production-e458.up.railway.app/api';
+  const API_URL = 'https://leaderboard-backend-2stb.onrender.com/api';
 // fetches users
   const fetchUsers = async () => {
     const response = await axios.get(`${API_URL}/users`);
